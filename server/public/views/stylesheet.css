@@ -1,0 +1,38 @@
+body {
+    background-color: chartreuse;
+    font-family: "Comic Sans MS";
+}
+
+h1 {
+    font-size: 36pt;
+    color: magenta;
+}
+
+button {
+    color: yellow;
+    font-size: 24pt;
+    padding: 20px;
+    width: 400px;
+    background-color: salmon;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.message {
+    font-size: 18pt;
+    color: hotpink;
+}
+
+.count {
+    font-size: 22pt;
+    color: orange;
+}

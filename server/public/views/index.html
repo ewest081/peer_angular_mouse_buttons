@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="clientApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcendence through Angular</title>
+
+    <link rel="stylesheet" href="/views/stylesheet.css"/>
+    <script src="/views/angular.min.js"></script>
+    <script src="/views/client.js"></script>
+
+</head>
+<body ng-controller="MainController" ng-style="bodyStyle">
+    <div class="container">
+        <h1>{{message}}</h1>
+
+        <div>
+            <h4>Below, the button "Click Me!" increases the count on both the 'mouse up' (click in)  and the 'mouse down' (click release).</h4>
+            <button ng-mouseup="countUp()" ng-mousedown="countUp()">Click Me!</button>
+            <p class="count">Count: {{count}}</p>
+        </div>
+
+        <div>
+            <h4>Below is a mouse enter and mouse leave function that changes a message:</h4>
+            <button ng-mouseenter="enter()" ng-mouseleave="exit()">Enter me!</button>
+            <div class="message">
+                <p ng-show="enterValue">{{enterMessage}}</p>
+                <p ng-show="exitValue">{{exitMessage}}</p>
+            </div>
+        </div>
+
+        <div>
+            <h4>Below is a mouse enter and mouse leave function that changes the button:</h4>
+            <button ng-mouseenter="enter2()" ng-mouseleave="exit2()">{{mouseMessage}}</button>
+    </div>
+    </div>
+
+
+</body>
+</html>
